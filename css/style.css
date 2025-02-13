@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2% 3% 90% 3% 2%;
+}
+
+.grid img {
+    grid-column: 3/ span 1;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.grid img:nth-child(even){
+    border: 5px orange dashed;
+ }
+
+ .grid img:first-child{
+    border: 5px green solid;
+ }
+
+ img:hover{
+    box-shadow: 10px 10px;
+    transition: box-shadow 0.3s ease;
+ }
+
+ @media all and (min-width: 750px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 2%, 44%, 4%, 44%, 2%;
+    }
+    
+ }
